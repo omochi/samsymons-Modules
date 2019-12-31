@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		592162B41F33BF5E006BF5C2 /* StaticLibraryNetworkingClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 592162B31F33BF5E006BF5C2 /* StaticLibraryNetworkingClass.m */; };
-		592162B51F33C0DC006BF5C2 /* StaticLibraryNetworkingClass.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 592162B21F33BF5E006BF5C2 /* StaticLibraryNetworkingClass.h */; };
-		592162B71F33CE65006BF5C2 /* StaticLibraryModule.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 592162B61F33CE5A006BF5C2 /* StaticLibraryModule.h */; };
 		59484C831F33A5F700381B6A /* FrameworkModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 59484C811F33A5F700381B6A /* FrameworkModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		59484C891F33A76500381B6A /* SomeFrameworkClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 59484C871F33A76500381B6A /* SomeFrameworkClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		59484C8A1F33A76500381B6A /* SomeFrameworkClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 59484C881F33A76500381B6A /* SomeFrameworkClass.m */; };
@@ -26,8 +24,6 @@
 		59484CB51F33AE5800381B6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59484CB31F33AE5800381B6A /* LaunchScreen.storyboard */; };
 		59484CBC1F33AE7200381B6A /* libStaticLibraryModule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59484C711F33A5EE00381B6A /* libStaticLibraryModule.a */; };
 		59484CBF1F33AFAF00381B6A /* StaticLibraryModelClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 59484CBE1F33AFAF00381B6A /* StaticLibraryModelClass.m */; };
-		59484CC21F33B02B00381B6A /* module.modulemap in CopyFiles */ = {isa = PBXBuildFile; fileRef = 59484CC11F33B02200381B6A /* module.modulemap */; };
-		59484CC31F33B07400381B6A /* StaticLibraryModelClass.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 59484CBD1F33AFAF00381B6A /* StaticLibraryModelClass.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +34,7 @@
 			remoteGlobalIDString = 59484C7E1F33A5F700381B6A;
 			remoteInfo = FrameworkModule;
 		};
-		59484CBA1F33AE6E00381B6A /* PBXContainerItemProxy */ = {
+		D69D871223BBBD57000DDFD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 59484C591F33A5DA00381B6A /* Project object */;
 			proxyType = 1;
@@ -54,10 +50,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				592162B71F33CE65006BF5C2 /* StaticLibraryModule.h in CopyFiles */,
-				592162B51F33C0DC006BF5C2 /* StaticLibraryNetworkingClass.h in CopyFiles */,
-				59484CC31F33B07400381B6A /* StaticLibraryModelClass.h in CopyFiles */,
-				59484CC21F33B02B00381B6A /* module.modulemap in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,7 +58,6 @@
 /* Begin PBXFileReference section */
 		592162B21F33BF5E006BF5C2 /* StaticLibraryNetworkingClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticLibraryNetworkingClass.h; sourceTree = "<group>"; };
 		592162B31F33BF5E006BF5C2 /* StaticLibraryNetworkingClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticLibraryNetworkingClass.m; sourceTree = "<group>"; };
-		592162B61F33CE5A006BF5C2 /* StaticLibraryModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticLibraryModule.h; sourceTree = "<group>"; };
 		59484C711F33A5EE00381B6A /* libStaticLibraryModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStaticLibraryModule.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		59484C7F1F33A5F700381B6A /* FrameworkModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FrameworkModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59484C811F33A5F700381B6A /* FrameworkModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameworkModule.h; sourceTree = "<group>"; };
@@ -151,7 +142,6 @@
 		59484C721F33A5EE00381B6A /* StaticLibraryModule */ = {
 			isa = PBXGroup;
 			children = (
-				592162B61F33CE5A006BF5C2 /* StaticLibraryModule.h */,
 				59484CBD1F33AFAF00381B6A /* StaticLibraryModelClass.h */,
 				59484CBE1F33AFAF00381B6A /* StaticLibraryModelClass.m */,
 				592162B21F33BF5E006BF5C2 /* StaticLibraryNetworkingClass.h */,
@@ -277,7 +267,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				59484CBB1F33AE6E00381B6A /* PBXTargetDependency */,
+				D69D871323BBBD57000DDFD5 /* PBXTargetDependency */,
 			);
 			name = StaticLibraryModuleConsumer;
 			productName = StaticLibraryModuleConsumer;
@@ -306,7 +296,7 @@
 					};
 					59484CA71F33AE5800381B6A = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -405,10 +395,10 @@
 			target = 59484C7E1F33A5F700381B6A /* FrameworkModule */;
 			targetProxy = 59484CA11F33A88E00381B6A /* PBXContainerItemProxy */;
 		};
-		59484CBB1F33AE6E00381B6A /* PBXTargetDependency */ = {
+		D69D871323BBBD57000DDFD5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 59484C701F33A5EE00381B6A /* StaticLibraryModule */;
-			targetProxy = 59484CBA1F33AE6E00381B6A /* PBXContainerItemProxy */;
+			targetProxy = D69D871223BBBD57000DDFD5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -562,24 +552,26 @@
 		59484C781F33A5EE00381B6A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEFINES_MODULE = YES;
-				MODULEMAP_FILE = "$(SRCROOT)/StaticLibraryModule/module.modulemap";
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USE_HEADERMAP = NO;
 			};
 			name = Debug;
 		};
 		59484C791F33A5EE00381B6A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEFINES_MODULE = YES;
-				MODULEMAP_FILE = "$(SRCROOT)/StaticLibraryModule/module.modulemap";
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USE_HEADERMAP = NO;
 			};
 			name = Release;
 		};
@@ -656,13 +648,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3B8C483UAP;
 				INFOPLIST_FILE = StaticLibraryModuleConsumer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samsymons.StaticLibraryModuleConsumer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/StaticLibraryModule";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -673,12 +668,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3B8C483UAP;
 				INFOPLIST_FILE = StaticLibraryModuleConsumer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samsymons.StaticLibraryModuleConsumer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/StaticLibraryModule";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -10,6 +10,7 @@
 
 @implementation StaticLibraryModelClass
 
+
 - (void)someModelObjectMethod {
   NSLog(@"Hello from the static library model class!");
 }
