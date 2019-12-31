@@ -1,3 +1,18 @@
+# 更新履歴
+
+## 構成の単純化と変な挙動の解消
+
+- 少し変更してからリビルドするとコケる問題を解消。
+- ヘッダーのコピーを削除。
+- `Defines Module`を`NO`、`Module Map File`の設定を削除。
+- `module.modulemap`が複雑でよくわからなかったので単純化。
+  ミソとして、`StaticLibraryModule.Model`などのサブモジュールの中に`export *`が無いと、
+  ソース側の`#import`がコンパイラにモジュールインポートに差し替えられたところで、
+  `Foundation`のシンボルが見えなくてうまくいかない、という問題があった。
+- ユーザ側の`Import Paths`にディレクトリを追加。
+  これは何が起きてるかわかりやすい構成だと思う。
+  ただ、Xcode的にはここが自動解決する構成が可能なはずだ・・・。
+
 # Modules
 
 An example of Objective-C static library & framework modules.
